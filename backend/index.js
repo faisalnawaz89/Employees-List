@@ -1,5 +1,5 @@
 require('dotenv').config();
-const port = process.env.PORT || 4000;
+const port = process.env.PORT || 5000;
 const express = require('express');
 const jwt = require('jsonwebtoken');
 const multer = require('multer');
