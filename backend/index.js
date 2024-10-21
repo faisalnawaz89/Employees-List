@@ -12,7 +12,7 @@ const { Schema } = require('mongoose');
 app.use(express.json());
 app.use(cors());
 
-const hostUrl = process.env.HOST_URL || `http://localhost:${port}`;
+const hostUrl = process.env.PORT || `http://localhost:${port}`;
 
 app.listen(port, async () => {
     try {
