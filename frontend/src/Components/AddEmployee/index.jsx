@@ -81,7 +81,7 @@ const AddEmployee = () => {
         let employeeimage = employeeData
         let formData = new FormData()
         formData.append('employeeimage', image)
-        await fetch('http://localhost:4000/upload',{
+        await fetch('https://employeelist-owh1.onrender.com/upload',{
             method:'POST',
             headers:{
                 Accept:'application/json'
@@ -93,7 +93,7 @@ const AddEmployee = () => {
         
         if(responseData.success){
             employeeimage.image = responseData.image_url
-            await fetch('http://localhost:4000/addemployee',{
+            await fetch('https://employeelist-owh1.onrender.com/addemployee',{
                 method:'POST',
                 headers:{
                     Accept:'application/json',

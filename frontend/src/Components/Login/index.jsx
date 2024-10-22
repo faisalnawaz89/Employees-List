@@ -21,7 +21,7 @@ import { LoginBody, LoginContainer } from './Login.styles';
     const signUp = async () => {
         // console.log('signup', formData)
         // let responseData
-        // await fetch('http://localhost:4000/signup',{
+        // await fetch('https://employeelist-owh1.onrender.com/signup',{
         //     method:'POST',
         //     headers:{
         //         Accept:'application/json',
@@ -48,7 +48,7 @@ import { LoginBody, LoginContainer } from './Login.styles';
     const Login = async () => {
         console.log('Login Data:', formData)
         let responseData
-        await fetch('http://localhost:4000/login',{
+        await fetch('https://employeelist-owh1.onrender.com/login',{
             method:'POST',
             headers:{
                 Accept:'application/json',
