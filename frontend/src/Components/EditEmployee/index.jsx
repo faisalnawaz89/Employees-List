@@ -24,7 +24,7 @@ const EditEmployee = () => {
 
     const fetchEmployeeData = async () => {
       try {
-        const response = await fetch(`https://employeeslist-qa3j.onrender.com/${id}`);
+        const response = await fetch(`https://employeeslist-qa3j.onrender.com/employee/${id}`);
         const result = await response.json();
     
         console.log('API Response:', result);
