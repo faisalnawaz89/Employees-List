@@ -11,6 +11,7 @@ const EmployeeTable = () => {
         .then((response)=> response.json())
         .then((data)=> setAllEmployee(data))
         .catch((error)=> console.error('Issue fetching employee data', error))
+        console.log(data)
     }
 
     useEffect(()=>{
@@ -68,7 +69,7 @@ const EmployeeTable = () => {
             {allemployee.map((empdata, index)=>{
 
                     const { id, name, image, email, phone, role, joiningdate, dateofbirth, aadharno, address} = empdata
-                    
+                    console.log(image)
                     return <>
                     <TableRow key={index}>
                         <TableData>{index + 1}</TableData>
