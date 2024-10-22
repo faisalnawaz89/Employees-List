@@ -7,7 +7,7 @@ const EmployeeTable = () => {
     const [allemployee, setAllEmployee] = useState([]) 
 
     const handleAllEmployeeAPI = async () => {
-        await fetch('https://employeelist-owh1.onrender.com/allemployee')
+        await fetch('https://employeeslist-qa3j.onrender.com/allemployee')
         .then((response)=> response.json())
         .then((data)=> setAllEmployee(data))
         .catch((error)=> console.error('Issue fetching employee data', error))
@@ -18,7 +18,7 @@ const EmployeeTable = () => {
     },[])
 
     const removeEmployee = async (id) => {
-        await fetch('https://employeelist-owh1.onrender.com/removeemployee',{
+        await fetch('https://employeeslist-qa3j.onrender.com/removeemployee',{
             method: 'POST',
             headers:{
                 Accept:'application/json','Content-Type':'application/json',

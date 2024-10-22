@@ -24,7 +24,7 @@ const EditEmployee = () => {
 
     const fetchEmployeeData = async () => {
       try {
-        const response = await fetch(`https://employeelist-owh1.onrender.com/${id}`);
+        const response = await fetch(`https://employeeslist-qa3j.onrender.com/${id}`);
         const result = await response.json();
     
         console.log('API Response:', result);
@@ -63,7 +63,7 @@ const EditEmployee = () => {
         const formData = new FormData();
         formData.append('employeeimage', image);
   
-        const imageUploadResponse = await fetch('https://employeelist-owh1.onrender.com/upload', {
+        const imageUploadResponse = await fetch('https://employeeslist-qa3j.onrender.com/upload', {
           method: 'POST',
           body: formData,
         });
@@ -79,7 +79,7 @@ const EditEmployee = () => {
       }
   
       // Send updated employee data
-      const response = await fetch(`https://employeelist-owh1.onrender.com/updatedemployee/${id}`, {
+      const response = await fetch(`https://employeeslist-qa3j.onrender.com/updatedemployee/${id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

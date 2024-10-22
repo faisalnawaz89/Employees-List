@@ -20,7 +20,7 @@ import { LoginBody, LoginContainer } from './Login.styles';
 
     const signUp = async () => {
         // let responseData
-        // await fetch('https://employeelist-owh1.onrender.com/signup',{
+        // await fetch('https://employeeslist-qa3j.onrender.com/signup',{
         //     method:'POST',
         //     headers:{
         //         Accept:'application/json',
@@ -46,7 +46,7 @@ import { LoginBody, LoginContainer } from './Login.styles';
 
     const Login = async () => {
         let responseData
-        await fetch('https://employeelist-owh1.onrender.com/login',{
+        await fetch('https://employeeslist-qa3j.onrender.com/login',{
             method:'POST',
             headers:{
                 Accept:'application/json',
