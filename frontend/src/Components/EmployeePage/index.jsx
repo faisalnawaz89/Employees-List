@@ -69,7 +69,6 @@ const EmployeeTable = () => {
             {allemployee.map((empdata, index)=>{
 
                     const { id, name, image, email, phone, role, joiningdate, dateofbirth, aadharno, address} = empdata
-                    console.log(image)
                     return <>
                     <TableRow key={index}>
                         <TableData>{index + 1}</TableData>
