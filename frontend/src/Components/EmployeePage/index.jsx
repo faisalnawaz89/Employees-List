@@ -5,13 +5,12 @@ import React, { useEffect, useState } from 'react'
 const EmployeeTable = () => {
 
     const [allemployee, setAllEmployee] = useState([]) 
-
+    console.log(allemployee)
     const handleAllEmployeeAPI = async () => {
         await fetch('https://employeeslist-qa3j.onrender.com/allemployee')
         .then((response)=> response.json())
         .then((data)=> setAllEmployee(data))
         .catch((error)=> console.error('Issue fetching employee data', error))
-        console.log(data)
     }
 
     useEffect(()=>{
