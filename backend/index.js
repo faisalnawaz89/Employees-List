@@ -10,7 +10,9 @@ const mongoose = require('./server');
 const { Schema } = require('mongoose');
 
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+    origin: '*'  // Adjust this based on your needs
+}));
 
 const hostUrl = process.env.HOST_URL || `http://localhost:${port}`;
 
